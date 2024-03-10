@@ -41,3 +41,5 @@ $ sh movie_predict_yolov5.sh
 #### 入力動画
 <div><video controls src="https://github.com/ys201810/yolo_strongsort/assets/43543590/30891f45-da40-40db-bf08-edd4db5923fb" muted="false"></video></div>
 
+#### 出力動画
+<div><video controls src="https://github.com/ys201810/yolo_strongsort/assets/43543590/00c41b49-7ba0-4afa-aa86-7fd348e99bcd" muted="false"></video></div>
