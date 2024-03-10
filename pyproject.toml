@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "yolo-strongsort"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "yolo_strongsort"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = ">=3.2.2"
+numpy = "1.23.5"
+opencv-python = ">=4.1.2"
+pillow = ">=7.1.2"
+pyyaml = ">=5.3.1"
+requests = ">=2.23.0"
+scipy = ">=1.4.1"
+torch = ">=1.7.0"
+torchvision = ">=0.8.1"
+tqdm = ">=4.41.0"
+yt-dlp = "^2023.12.30"
+imageio = "2.4.1"
+moviepy = "0.2.3.5"
+gdown = "^5.1.0"
+pandas = "1.5.3"
+seaborn = "^0.13.2"
+easydict = "^1.13"
+cython = "^3.0.9"
+h5py = "^3.10.0"
+six = "^1.16.0"
+tb-nightly = "^2.17.0a20240306"
+future = "^1.0.0"
+yacs = "^0.1.8"
+flake8 = "^7.0.0"
+yapf = "^0.40.2"
+isort = "4.3.21"
+torchreid = "^0.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
