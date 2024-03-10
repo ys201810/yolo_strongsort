@@ -61,16 +61,18 @@ wget -c https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5x.pt 
 
 ### 3. クラウドカウンティング用のモデル指定で物体追跡
 ```
-poetry run python ../src/StrongSORT-YOLO/yolov5/detect.py \
+poetry run python ../src/StrongSORT-YOLO/track_v5.py \
   --source ../data/input_video/clip_video.mp4 \
-  --yolo-weights weights/crowdhuman_yolov5m.pt \
-  --strong-sort-weights osnet_x0_25_market1501.pt \
+  --yolo-weights ../models/crowdhuman_yolov5m.pt \
+  --strong-sort-weights ../models/osnet_x0_25_market1501.pt \
+  --config-strongsort ../src/StrongSORT-YOLO/strong_sort/configs/strong_sort.yaml \
   --img 640 \
   --save-vid \
-  --classes 0 \
   --exist-ok \
   --project ../data/output/ \
-  --name crowdhuman_yolov5m_filter
+  --classes 0 \  # class番号を指定することで、予測対象を絞ることができる。
+  --name crowdhuman_yolov5m
+
 ```
 
 モデルは以下のコマンドでダウンロード
